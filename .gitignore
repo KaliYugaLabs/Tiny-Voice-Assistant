@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Keep TrainData.pth committed so `python Jarvis.py --text` works without training

@@ -1,0 +1,12 @@
+# Base-of-Self-aware-Ai — modern requirements (tested Python 3.11, Windows)
+# Old pins (torch==1.12.1, numpy==1.23.3) are retired — use flexible minimums.
+torch>=2.0
+numpy>=1.24
+nltk>=3.8
+pyttsx3>=2.90
+SpeechRecognition>=3.10
+wikipedia>=1.4.0
+pywhatkit>=5.4
+# PyAudio (mic input) — Windows: pip install pipwin && pipwin install pyaudio
+# If pip fails on PyAudio, voice falls back to typed input automatically.
+PyAudio>=0.2.13; sys_platform == "win32"
